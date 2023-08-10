@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create</title>
+</head>
+<body>
+    <h1>Create a New Key-Value Pair</h1>
+    <form method="post">
+        {% csrf_token %}
+        Key: <input type="text" name="key"><br>
+        Value: <input type="text" name="value"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p><a href="{% url 'read' %}">View Data</a></p>
+</body>
+</html>

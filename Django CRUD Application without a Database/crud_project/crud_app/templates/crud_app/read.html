@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Read</title>
+</head>
+<body>
+    <h1>Stored Data</h1>
+    <ul>
+        {% for key, value in data.items %}
+        <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="{% url 'create' %}">Add Data</a></p>
+</body>
+</html>
