@@ -8,6 +8,9 @@ data = {
     'city': 'Delhi',
 }
 
+def welcome(request):
+    return render(request, 'crud_app/index.html')
+
 def create(request):
     if request.method == 'POST':
         key = request.POST['key']
